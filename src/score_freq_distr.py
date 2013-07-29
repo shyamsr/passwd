@@ -9,8 +9,8 @@ class score_freq_distr():
     def __init__(self, username, password):
         self.username = username
         self.password = password
-        self.f1 = open("../data/password_letter_freq.txt","r")
-        self.f2 = open("../data/username_letter_freq.txt","r")
+        self.f1 = open("password_letter_freq.txt","r")
+        self.f2 = open("username_letter_freq.txt","r")
         self.dic_pwd = {}
         self.dic_usn = {}
         self.v_letter = ['~','`','!','@','#','$','%','^','&','*','(',')','_','+','-','=','|','\\','}',']','{','[','"',"'",':',';',',','<','.','>','?','/','1','2','3','4','5','6','7','8','9','0','q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m','Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','J','K','L','Z','X','C','V','B','N','M']

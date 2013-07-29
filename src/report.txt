@@ -1,0 +1,17 @@
+password length    score: 4
+similarity-tfidf   score: 0
+edit-distance      score: 1
+uname-in-passwd    score: 1
+upper-case letter  score: 1
+special character  score: 1
+distribution       score: 10
+keyboard sequence  score: 10
+alphabet sequence  score: 10
+repeative pattern  score: 10
+-----------------------------
+overall            score: 3
+**********comments**********
+@password and username is too similar
+@password length is too short
+@password contains NO uppercase letters
+@password contains NO special characters

@@ -48,7 +48,7 @@ def main():
     '''
     print 'Initialization starting...'
     dic_1 = {}
-    f = open('../data/document_frequency.txt','r')
+    f = open('document_frequency.txt','r')
     for line in f:
         line = line.split()
         dic_1.update({line[0]: int(line[1])})
@@ -151,7 +151,7 @@ def main():
                     else:
                         score_fin = int((alpha*score_1 + score_2 + alpha*score_3 + score_4 + score_5 + alpha*score_6 + alpha*score_7 + alpha*score_9 + alpha*score_10 + alpha*score_11)/10)
                         print 'password strength: ', score_fin
-                f = open('../data/report.txt', 'w')
+                f = open('report.txt', 'w')
                 f.write("password length    score: %d\n" %(score_3))
                 f.write("similarity-tfidf   score: %d\n" %(score_1))
                 f.write("edit-distance      score: %d\n" %(score_10))
@@ -187,7 +187,7 @@ def main():
                 break
                     
         elif command == 'report':
-            f = open("../data/report.txt","r")
+            f = open("report.txt","r")
             print '***********report***********'
             for line in f:
                 print line,
